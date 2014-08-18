@@ -9,15 +9,13 @@ html(lang='en')
     link(href="/bootstrap/css/bootstrap.min.css" rel="stylesheet")
     link(rel='stylesheet', href='/css/style.css')
   body
+    h1 World-Travler
     .container-fluid
-      h1 World-Travler
-      nav
-        ul
-          a(href='/') Home
-          a(href='/about') About
-          a(href='/faq') F.A.Q
-          a(href='/contact') Contact
-
+      .row
+        .col-xs-12
+          include nav
+      .row
+        .col-xs-12
 
 
       block content
