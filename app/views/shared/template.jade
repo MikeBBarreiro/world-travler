@@ -1,26 +1,34 @@
 doctype html
-html
+html(lang='en')
   head
     meta(charset='utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
     title World-Travler
+    link(href="/bootstrap/css/bootstrap.min.css" rel="stylesheet")
     link(rel='stylesheet', href='/css/style.css')
   body
-    h1 World-Travler
-    nav
-      ul
-        a(href='/') Home
-        a(href='/about') About
-        a(href='/faq') F.A.Q
-        a(href='/contact') Contact
+    .container-fluid
+      h1 World-Travler
+      nav
+        ul
+          a(href='/') Home
+          a(href='/about') About
+          a(href='/faq') F.A.Q
+          a(href='/contact') Contact
 
 
 
-    block content
+      block content
 
     script(src='/js/vendor/jquery-2.1.1.min.js')
     script(src='/js/vendor/lodash.min.js')
     script(src='/js/vendor/moment.min.js')
+    script(src="/bootstrap/js/bootstrap.min.js")
     script(src='/js/user/main.js')
 
     block scripts
+
+
 
