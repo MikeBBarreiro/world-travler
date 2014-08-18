@@ -1,5 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+
+html, body {
+  height: 100%;
+}
+
+#map {
+  height: 300px;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+
 //var
 @bg-color: saturate(green, 20%);
 
@@ -28,4 +39,39 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.globe {
+  height: 25px;
+  width: 25px;
+}
+
+.outline-inward {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.outline-inward:before {
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  border: #59B2FC solid 4px;
+  top: -16px;
+  right: -16px;
+  bottom: -16px;
+  left: -16px;
+  opacity: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+}
+.outline-inward:hover:before, .outline-inward:focus:before, .outline-inward:active:before {
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+  opacity: 1;
 }
