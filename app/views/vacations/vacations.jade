@@ -1,0 +1,24 @@
+extends ../shared/template
+block content
+  h1 Your Vacations
+  #map
+
+  table.table.table-striped.table-hover
+    th Name
+    th Start Date
+    th End Date
+    th Latitude
+    th Longitude
+    th Photos
+    each vacation in vacations
+      tr(data-name=vacation.name, data-lat=vacation.lat, data-lng=vacation.lng)
+        td: a(href='/vacations/#{vacation._id}')= vacation.name
+        td= vacation.start
+        td= vacation.end
+        td= vacation.lat
+        td= vacation.lng
+        td= vacation.photo
+
+
+block scripts
+  script(src='/js/user/vacations.js')

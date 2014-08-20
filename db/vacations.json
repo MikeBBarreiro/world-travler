@@ -1,0 +1,19 @@
+{
+  "_id":{"$oid":"000000000000000000000001"},
+  "name":"Paris, France",
+  "start":{"$date":"2013-09-05T00:00:00.000-0500"},
+  "end":{"$date":"2013-10-05T00:00:00.000-0500"},
+  "lat":48.856614,
+  "lng":2.3522219000000177,
+  "photos":["http://photo.elsoar.com/wp-content/images/Tour-Eiffel.-Paris-France-4.jpg"]
+}
+{
+  "_id":{"$oid":"000000000000000000000003"},
+  "name":"Rome, Italy ",
+  "start":{"$date":"2013-01-05T00:00:00.000-0500"},
+  "end":{"$date":"2013-08-05T00:00:00.000-0500"},
+  "lat":41.8723889,
+  "lng":12.48018019999995,
+  "photos":["http://jsis.washington.edu/cwes//image/Roman_Forum_Rome_Italy.jpg"]
+}
+
