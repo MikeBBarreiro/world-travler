@@ -6,7 +6,7 @@
   var map;
 
   $(document).ready(function(){
-    initMap(0, 0, 2);
+    initMap(30, 0, 2);
     var positions = getPositions();
     positions.forEach(function(pos){
       addMarker(pos.lat, pos.lng, pos.name);

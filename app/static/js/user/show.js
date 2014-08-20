@@ -13,7 +13,7 @@
 
   function addMarker(lat, lng, name){
     var latLng = new google.maps.LatLng(lat, lng);
-    new google.maps.Marker({map: map, position: latLng, title: name, animation: google.maps.Animation.BOUNCE});
+    new google.maps.Marker({map: map, position: latLng, title: name, animation: google.maps.Animation.BOUNCE, icon: '/img/map-pointer-icon.png'});
   }
 
   function getPosition(){
