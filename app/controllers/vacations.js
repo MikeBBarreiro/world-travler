@@ -39,9 +39,8 @@ exports.uploadPhoto = function(req,res){
     var form = new mp.Form();
     form.parse(req, function(err, fields, files){
       vacation.uploadPhoto(files, function(){
-        res.redirect('vacations/' + req.params.id, {vacation: vacation});
+        res.redirect('/vacations/' + req.params.id);
       });
     });
   });
 };
-
