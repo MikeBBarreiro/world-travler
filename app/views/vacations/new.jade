@@ -2,7 +2,7 @@ extends ../shared/template
 block content
   #new-vacation
     .row
-      form.save(class="form-inline" role="form", method="post", action="/vacations")
+      form.save.animated.flipInX(class="form-inline" role="form", method="post", action="/vacations")
         input#lat(type="hidden", name="lat")
         input#lng(type="hidden", name="lng")
         .form-group
